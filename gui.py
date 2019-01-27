@@ -56,10 +56,12 @@ class Pirka(QWidget):
 		self.setMinimumWidth(self.width)
 		#入力欄
 		self.textbox = QLineEdit(self)
+		self.textbox.setStyleSheet("color: black;")
 		self.textbox.move(5, 560)
 		self.textbox.resize(350,30)
 		#ログ領域
 		self.responselbl = QTextEdit(self)
+		self.responselbl.setStyleSheet("color: black;")
 		self.responselbl.move(505, 10)
 		self.responselbl.resize(460, 580)
 		self.responselbl.setText(nowLog)
